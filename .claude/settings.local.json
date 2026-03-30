@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ai-game-developer__script-execute",
+      "mcp__ai-game-developer__assets-refresh",
+      "mcp__ai-game-developer__gameobject-find",
+      "mcp__ai-game-developer__gameobject-component-get",
+      "mcp__ai-game-developer__object-get-data",
+      "mcp__ai-game-developer__scene-save"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "ai-game-developer"
+  ]
+}
