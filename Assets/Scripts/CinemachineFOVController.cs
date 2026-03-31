@@ -23,6 +23,7 @@ public class CinemachineFOVController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private CinemachineCamera _virtualCamera;
+    [SerializeField] private PlayerController _playerController;
 
     [Header("FOV Targets (degrees)")]
     [Tooltip("FOV when moving slowly / standing still — narrow for focus.")]
@@ -31,6 +32,8 @@ public class CinemachineFOVController : MonoBehaviour
     [SerializeField] private float _defaultFOV = 68f;
     [Tooltip("FOV when sprinting — wide for speed sensation.")]
     [SerializeField] private float _sprintFOV  = 80f;
+    [Tooltip("FOV when aiming down sights (ADS).")]
+    [SerializeField] private float _adsFOV     = 42f;
 
     [Header("Transition")]
     [Tooltip("SmoothDamp time for FOV changes (seconds). Lower = snappier.")]
@@ -77,6 +80,10 @@ public class CinemachineFOVController : MonoBehaviour
 
     private float ComputeTargetFOV()
     {
+        // ADS always takes priority
+        if (_playerController != null && _playerController.IsADS)
+            return _adsFOV;
+
         Vector3 vel           = _motor.Velocity;
         float   horizontalSpd = Mathf.Sqrt(vel.x * vel.x + vel.z * vel.z);
         bool    sprinting     = InputReader.Instance != null && InputReader.Instance.SprintHeld;

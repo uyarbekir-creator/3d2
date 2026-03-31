@@ -41,7 +41,14 @@
       "Bash(AUTH=\"YBFQCVo024xvZRfyGRB9hvYyCfIfFiwp3J_3k4MjluI\")",
       "Bash(BASE=\"https://ai-game.dev/mcp\")",
       "Bash(__NEW_LINE_19371e5f5205a752__ curl:*)",
-      "Bash(__NEW_LINE_f9d9ee3a01fb1b2b__ curl:*)"
+      "Bash(__NEW_LINE_f9d9ee3a01fb1b2b__ curl:*)",
+      "Bash(du -sh Assets/*)",
+      "mcp__ai-game-developer__scene-get-data",
+      "Bash(grep -r \"PlayerController\" Assets/Scenes/*.unity)",
+      "mcp__ai-game-developer__gameobject-component-add",
+      "mcp__ai-game-developer__gameobject-component-modify",
+      "mcp__ai-game-developer__console-get-logs",
+      "Bash(git add:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

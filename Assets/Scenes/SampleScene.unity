@@ -18749,6 +18749,9 @@ GameObject:
   - component: {fileID: 1117891477}
   - component: {fileID: 1117891482}
   - component: {fileID: 1117891481}
+  - component: {fileID: 1117891485}
+  - component: {fileID: 1117891484}
+  - component: {fileID: 1117891483}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -18898,6 +18901,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6094379f5512fe41948d4d4c5ada1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputReader
+--- !u!114 &1117891483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117891476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca03aca04aae434bb06969c670c7f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CinemachineFOVController
+  _virtualCamera: {fileID: 0}
+  _playerController: {fileID: 0}
+  _walkFOV: 60
+  _defaultFOV: 68
+  _sprintFOV: 80
+  _adsFOV: 42
+  _smoothTime: 0.28
+  _fullSpeedThreshold: 8
+--- !u!114 &1117891484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117891476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca03aca04aae434bb06969c670c7f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CinemachineFOVController
+  _virtualCamera: {fileID: 0}
+  _playerController: {fileID: 1117891485}
+  _walkFOV: 60
+  _defaultFOV: 68
+  _sprintFOV: 80
+  _adsFOV: 42
+  _smoothTime: 0.28
+  _fullSpeedThreshold: 8
+--- !u!114 &1117891485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117891476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 762910ff053468d4499a23d802d8ade5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  Character: {fileID: 1117891477}
+  CharacterCamera: {fileID: 330585549}
+  MouseSensitivity: 1
+  NormalSpeed: 5
+  SprintSpeed: 9
+  ADSDistance: 0.25
+  ADSFramingX: 0.15
+  HipFramingX: 0.65
+  FramingLerpSpeed: 10
 --- !u!1 &1118575700
 GameObject:
   m_ObjectHideFlags: 0
@@ -31882,6 +31946,12 @@ MonoBehaviour:
   Character: {fileID: 1117891477}
   CharacterCamera: {fileID: 330585549}
   MouseSensitivity: 0.01
+  NormalSpeed: 5
+  SprintSpeed: 9
+  ADSDistance: 0.25
+  ADSFramingX: 0.15
+  HipFramingX: 0.65
+  FramingLerpSpeed: 10
 --- !u!1 &2133165310
 GameObject:
   m_ObjectHideFlags: 0
