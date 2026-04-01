@@ -5990,9 +5990,9 @@ Transform:
   m_GameObject: {fileID: 70208647}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.6673, y: -1.45, z: -2.16801}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -42.367302, y: -1.45, z: -2.16801}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 16956154}
   - {fileID: 552189472}
@@ -14896,8 +14896,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 43.5, y: -1.5, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 954669121}
   - {fileID: 445381114}
@@ -15931,8 +15931,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -1.5, z: 0}
-  m_LocalScale: {x: 100, y: 200, z: 0.1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 500, y: 1000, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
@@ -17926,9 +17926,9 @@ Transform:
   m_GameObject: {fileID: 1041287739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.97715, y: -1.22741, z: -15.20655}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -4.97715, y: -1.22741, z: 10.593453}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1380143423}
   - {fileID: 1753616324}
@@ -18821,8 +18821,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KinematicCharacterController.KinematicCharacterMotor
   Capsule: {fileID: 1117891480}
-  CapsuleRadius: 0.1
-  CapsuleHeight: 1
+  CapsuleRadius: 0.5
+  CapsuleHeight: 2
   CapsuleYOffset: 0
   CapsulePhysicsMaterial: {fileID: 0}
   GroundDetectionExtraDistance: 0
@@ -18869,8 +18869,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
-  m_Height: 1
+  m_Radius: 0.5
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1117891481
@@ -18955,7 +18955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   Character: {fileID: 1117891477}
   CharacterCamera: {fileID: 330585549}
-  MouseSensitivity: 1
+  MouseSensitivity: 0.01
   NormalSpeed: 5
   SprintSpeed: 9
   ADSDistance: 0.25
